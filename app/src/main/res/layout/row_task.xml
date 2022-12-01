@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tvTaskTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:hint="@string/tv_task"
+        android:maxLines="1"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/imgEditIcon"
+        app:layout_constraintStart_toEndOf="@+id/cbTaskDone"
+        app:layout_constraintTop_toTopOf="@+id/cbTaskDone" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:ellipsize="end"
+        android:hint="@string/tv_description"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="@+id/cbTaskDone"
+        app:layout_constraintEnd_toStartOf="@+id/imgEditIcon"
+        app:layout_constraintStart_toStartOf="@+id/tvTaskTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvTaskTitle" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgEditIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toStartOf="@+id/btnDeleteIcon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_edit_32"
+        app:tint="@color/grey_shade_1"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btnDeleteIcon"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="15dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/imgEditIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgEditIcon"
+        app:srcCompat="@drawable/ic_baseline_delete_32"
+        app:tint="@color/design_default_color_error"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <CheckBox
+        android:id="@+id/cbTaskDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/sub_main_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

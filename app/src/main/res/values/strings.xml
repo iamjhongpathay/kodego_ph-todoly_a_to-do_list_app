@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">ToDoly</string>
+    //Label
+    <string name="txt_title_task">All Task / No Task</string>
+    <string name="txt_add_task">Add a New Task</string>
+    <string name="txt_task">Task</string>
+    <string name="txt_edit_task">Edit Task</string>
+    <string name="txt_note">Note: \nSwipe down the list of tasks to see the changes.</string>
+    <string name="txt_no_task">No Task</string>
+    <string name="txt_no_task_desc">Click + to add new task.</string>
+
+    //View Label
+    <string name="tv_date">Jan 01, 2022</string>
+    <string name="tv_task">Task Name</string>
+    <string name="tv_description">No Description</string>
+    //Edit Text Field
+    <string name="et_task">Task</string>
+    <string name="et_description">Describe your task...</string>
+    //Button
+    <string name="btn_clear_text">Clear</string>
+    <string name="btn_add_task">Add</string>
+    <string name="btn_cancel_task">Cancel</string>
+    <string name="fab_add_task">Add Task</string>
+    <string name="btn_update_task">Update</string>
+    <string name="btn_discard">Discard</string>
+    <string name="btn_about_dismiss">OK</string>
+
+    //About
+    <string name="about">About</string>
+    <string name="about_app_name">ToDoly - A To-Do List App</string>
+    <string name="version">Version 1.0</string>
+    <string name="about_developer">Developer</string>
+    <string name="developer_name">Jefferson Omagap Pathay</string>
+    <string name="developer_email">jeffersonpathay@gmail.com</string>
+    <string name="developer_instagram">Instagram: @jhong.pathay</string>
+    <string name="developer_facebook">Facebook: Jhong Pathay</string>
+    <string name="big_thanks_to">Big Thanks to</string>
+    <string name="kodego_professor">KodeGo Professor:</string>
+    <string name="professor_name">Paulo Tipay</string>
+
+</resources>
