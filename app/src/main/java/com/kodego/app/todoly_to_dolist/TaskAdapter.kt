@@ -29,8 +29,8 @@ class TaskAdapter(var taskModel: MutableList<Task>): RecyclerView.Adapter<TaskAd
             if(taskModel[position].isTaskDone){
                 cbTaskDone.isChecked = taskModel[position].isTaskDone
                 cbTaskDone.isEnabled = false
-                tvTaskTitle.setPaintFlags(tvTaskTitle.paintFlags or STRIKE_THRU_TEXT_FLAG)
-                tvDescription.setPaintFlags(tvDescription.paintFlags or STRIKE_THRU_TEXT_FLAG)
+                tvTaskTitle.paintFlags = tvTaskTitle.paintFlags or STRIKE_THRU_TEXT_FLAG
+                tvDescription.paintFlags = tvDescription.paintFlags or STRIKE_THRU_TEXT_FLAG
                 holder.itemView.isEnabled = false
             }
 
